@@ -23,12 +23,17 @@
 # Jenkins Configuraitons Directory
 cd $JENKINS_HOME
 
+#Checking out to my branch
+git pull
+
+git checkout tvn 
+
 # Add general configurations, job configurations, and user content
 git add -- *.xml jobs/*/*.xml userContent/* *.md users/*/config.xml
 
 git commit -m &quot;Automated Jenkins commit&quot;
 
-git push -u origin main</command>
+git push -u origin tvn</command>
       <configuredLocalRules/>
     </hudson.tasks.Shell>
   </builders>
