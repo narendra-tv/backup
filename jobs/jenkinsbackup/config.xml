@@ -24,7 +24,7 @@
 cd $JENKINS_HOME
 
 # Add general configurations, job configurations, and user content
-git add -- *.xml jobs/*/*.xml userContent/* 
+git add -- *.xml jobs/*/*.xml userContent/* *.md
 
 # only add user configurations if they exist
 if [ -d users ]; then
